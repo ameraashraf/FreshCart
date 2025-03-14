@@ -1,0 +1,27 @@
+.content {
+  height: 200px;
+}
+
+/* Add to Cart Button */
+.addToCartBtn {
+  transition: all 0.3s ease;
+}
+.addToCartBtn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* Slider */
+/* Custom arrow styles */
+.slickPrev::before,
+.slick-next::before {
+  color: #333; /* Red color for arrows */
+}
+
+.slick-prev {
+  left: -30px; /* Move the previous arrow further left */
+}
+
+.slick-next {
+  right: -30px; /* Move the next arrow further right */
+}

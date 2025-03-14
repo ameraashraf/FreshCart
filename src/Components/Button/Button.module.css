@@ -1,0 +1,11 @@
+.formButton {
+    line-height: 1.8;
+  }
+  
+  @media (max-width: 768px) {
+   
+    .formButton {
+      width: 100%;
+    }
+  }
+  
