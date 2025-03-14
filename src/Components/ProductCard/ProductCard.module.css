@@ -1,0 +1,82 @@
+.productContent {
+  border: 1px solid #ddd;
+  transition: transform 0.3s;
+  box-shadow: var(--shadow);
+  position: relative;
+  
+}
+
+.productContent:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border: solid 1px #adb5bd;
+}
+
+.productContent .addButton {
+  margin-bottom: 5px;
+}
+
+.productContent:hover .addButton {
+  opacity: 1;
+  transform: translateY(-20%);
+}
+
+.priceAndRating {
+  font-size: 15px;
+  color: #555;
+}
+
+/* favorite button styling */
+.addToFavouritesBtn {
+  font-weight: lighter;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 50%;
+  margin: 8px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.addToFavouritesBtn:hover {
+  color: #dc3545;
+}
+
+/* Adjust product content for medium screens */
+@media (max-width: 992px) {
+  .productContent img {
+    height: 230px;
+  }
+
+  .addToFavouritesBtn {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Adjust layout for tablets and small devices */
+@media (max-width: 768px) {
+  .productContent img {
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+
+  .priceAndRating {
+    padding: 0 4px;
+    font-size: 14px;
+  }
+  .addToFavouritesBtn {
+    margin: 8px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

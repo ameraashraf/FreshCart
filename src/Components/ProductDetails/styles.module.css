@@ -1,0 +1,76 @@
+/* Responsive Styling for Tablet and Mobile Devices */
+@media (max-width: 991px) {
+    .productInfo h4 {
+      font-size: 20px;
+    }
+  
+    .productInfo p {
+      font-size: 14px;
+    }
+  
+    .priceAndRating {
+      font-size: 14px;
+    }
+  
+    /* Button adjustment for smaller screens */
+    .addToCartBtn {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .addToFavouritesBtn {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .productContainer {
+      padding: 10px;
+    }
+  
+    .productImage img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .productInfo h4 {
+      font-size: 18px;
+    }
+  
+    .productInfo p {
+      font-size: 12px;
+    }
+  
+    /* Price and Rating for smaller screens */
+    .priceAndRating p {
+      font-size: 12px;
+    }
+  
+    /* Button width for mobile devices */
+    .addToCartBtn,
+    .addToFavouritesBtn {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-md-3,
+    .col-md-9 {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .productInfo {
+      text-align: center;
+    }
+  
+    /* Adjust image container */
+    .col-md-3 {
+      text-align: center;
+    }
+  }

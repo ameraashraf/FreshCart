@@ -1,0 +1,16 @@
+.shoppingButton {
+  background-color: transparent;
+  border-color: #333;
+  transition: all 1s;
+  height: 50px;
+  position: sticky;
+  top: 10px;
+}
+
+.shoppingButton:hover {
+  background-color: #333;
+}
+
+.shoppingButton:hover a {
+  color: white;
+}

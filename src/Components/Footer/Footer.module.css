@@ -1,0 +1,15 @@
+ul li {
+  cursor: pointer;
+}
+
+.foortBg {
+  background-color: #eeeeee;
+}
+
+@media (max-width: 786px) {
+  .socialBox {
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+}
