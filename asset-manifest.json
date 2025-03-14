@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/FreshCart/static/css/main.c7fabf98.css",
+    "main.js": "/FreshCart/static/js/main.188dfbf7.js",
+    "static/js/453.0b71bf06.chunk.js": "/FreshCart/static/js/453.0b71bf06.chunk.js",
+    "static/media/Home.png": "/FreshCart/static/media/Home.a122177f6752b4f063ab.png",
+    "static/media/fa-solid-900.ttf": "/FreshCart/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
+    "static/media/fa-brands-400.ttf": "/FreshCart/static/media/fa-brands-400.26b80c8830bebf340211.ttf",
+    "static/media/fa-solid-900.woff2": "/FreshCart/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
+    "static/media/fa-brands-400.woff2": "/FreshCart/static/media/fa-brands-400.fdbb558523a380307689.woff2",
+    "static/media/fa-regular-400.ttf": "/FreshCart/static/media/fa-regular-400.05fdd87be89f7f8f0a1e.ttf",
+    "static/media/fa-regular-400.woff2": "/FreshCart/static/media/fa-regular-400.4f6a2dabee9c092d09b9.woff2",
+    "static/media/fa-v4compatibility.ttf": "/FreshCart/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
+    "static/media/freshcart-logo.svg": "/FreshCart/static/media/freshcart-logo.53f7a424c3aedc30a0fb46dc2278137c.svg",
+    "static/media/empty box.avif": "/FreshCart/static/media/empty box.3e37769d8fbac40e1f46.avif",
+    "static/media/fa-v4compatibility.woff2": "/FreshCart/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
+    "static/media/slick.svg": "/FreshCart/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/FreshCart/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/FreshCart/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/FreshCart/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/FreshCart/index.html",
+    "main.c7fabf98.css.map": "/FreshCart/static/css/main.c7fabf98.css.map",
+    "main.188dfbf7.js.map": "/FreshCart/static/js/main.188dfbf7.js.map",
+    "453.0b71bf06.chunk.js.map": "/FreshCart/static/js/453.0b71bf06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7fabf98.css",
+    "static/js/main.188dfbf7.js"
+  ]
+}
