@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FreshCart/static/css/main.c7fabf98.css",
-    "main.js": "/FreshCart/static/js/main.188dfbf7.js",
+    "main.js": "/FreshCart/static/js/main.196469d8.js",
     "static/js/453.0b71bf06.chunk.js": "/FreshCart/static/js/453.0b71bf06.chunk.js",
     "static/media/Home.png": "/FreshCart/static/media/Home.a122177f6752b4f063ab.png",
     "static/media/fa-solid-900.ttf": "/FreshCart/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
@@ -20,11 +20,11 @@
     "static/media/slick.woff": "/FreshCart/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/FreshCart/index.html",
     "main.c7fabf98.css.map": "/FreshCart/static/css/main.c7fabf98.css.map",
-    "main.188dfbf7.js.map": "/FreshCart/static/js/main.188dfbf7.js.map",
+    "main.196469d8.js.map": "/FreshCart/static/js/main.196469d8.js.map",
     "453.0b71bf06.chunk.js.map": "/FreshCart/static/js/453.0b71bf06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7fabf98.css",
-    "static/js/main.188dfbf7.js"
+    "static/js/main.196469d8.js"
   ]
 }
