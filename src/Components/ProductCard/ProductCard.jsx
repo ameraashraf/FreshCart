@@ -13,10 +13,7 @@ function ProductCard({ product }) {
         const productId = product.id;
         return (
           <div className="col-6  col-md-4 col-lg-3" key={index}>
-            <div
-              className={`p-md-3 p-2 rounded-3  ${styles.productContent} `}
-            
-            >
+            <div className={`p-md-3 p-2 rounded-3  ${styles.productContent} `}>
               <Link
                 to={"/ProductDetails/" + product.id}
                 aria-label={`View details for ${product.title}`}
@@ -28,7 +25,6 @@ function ProductCard({ product }) {
                   effect="blur"
                   width="100%"
                   height="100%"
-                  
                 />
                 <h5 className="text-truncate text-center text-md-start">
                   {product.title}
