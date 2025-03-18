@@ -3,7 +3,6 @@ import { useQuery } from "react-query";
 import Loader from "../Loader/Loader";
 import ProductCard from "../ProductCard/ProductCard";
 import { Helmet } from "react-helmet-async";
-
 function Products() {
   // Fetch products data from the API
   function fetchData() {

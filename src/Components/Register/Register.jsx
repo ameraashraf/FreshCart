@@ -38,6 +38,7 @@ function Register() {
 
               {/* Render the registration form */}
               <RegisterForm formik={formik} isLoading={isLoading} />
+              
             </div>
           </div>
         </div>

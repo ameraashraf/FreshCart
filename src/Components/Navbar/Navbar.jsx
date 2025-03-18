@@ -1,20 +1,25 @@
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../images/freshcart-logo.svg";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { authContext } from "../Context/AuthContextProvider";
 import { cartContext } from "../CartContextProvider/CartContextProvider";
 import { wishlistContext } from "../WishlistContextProvider/WishlistContextProvider";
 
 function Navbar() {
   const { token, setToken } = useContext(authContext);
-
-  // use cart context to use the cart number items here in the cart
   const { numberOfCartItems } = useContext(cartContext);
-
   const { itemsCount } = useContext(wishlistContext);
-
-  //useNavigate
   const navigate = useNavigate();
+
+  // Reference to the navbar toggler button
+  const navbarTogglerRef = useRef(null);
+
+  // Function to close the navbar
+  const closeNavbar = () => {
+    if (navbarTogglerRef.current && window.innerWidth < 992) {
+      navbarTogglerRef.current.click();
+    }
+  };
 
   //handleLogout
   function handleLogout() {
@@ -23,15 +28,13 @@ function Navbar() {
     navigate("/Login");
   }
 
-  //get the userData from authContext -- for profile Name
-  //  const { userData } = useContext(authContext);
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light px-2 fixed-top">
-      <Link className="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/" onClick={closeNavbar}>
         <img src={Logo} alt="Fresh cart" />
       </Link>
       <button
+        ref={navbarTogglerRef}
         className="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -47,26 +50,25 @@ function Navbar() {
         {token ? (
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <Link className="nav-link" to="/Products">
+              <Link className="nav-link" to="/Products" onClick={closeNavbar}>
                 {" "}
                 Products
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Categories">
+              <Link className="nav-link" to="/Categories" onClick={closeNavbar}>
                 {" "}
                 Categories
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Brands">
+              <Link className="nav-link" to="/Brands" onClick={closeNavbar}>
                 {" "}
                 Brands
               </Link>
             </li>
-
             <li className="nav-item">
-              <Link className="nav-link" to="/Orders">
+              <Link className="nav-link" to="/Orders" onClick={closeNavbar}>
                 {" "}
                 Orders
               </Link>
@@ -77,14 +79,13 @@ function Navbar() {
         )}
       </div>
 
-      {/* ----- */}
       <div
         className="collapse navbar-collapse align-items-center "
         id="navbarNavDropdown"
       >
         <ul className="navbar-nav ms-auto ">
           <li className="nav-item position-relative ">
-            <Link className="nav-link" to="/Cart">
+            <Link className="nav-link" to="/Cart" onClick={closeNavbar}>
               {" "}
               <i className="fas fa-cart-plus me-1"></i>
               <span className="badge text-danger position-absolute translate-middle">
@@ -93,9 +94,8 @@ function Navbar() {
             </Link>
           </li>
 
-          {/* wish list */}
           <li className="nav-item position-relative ">
-            <Link className="nav-link" to="/Wishlist">
+            <Link className="nav-link" to="/Wishlist" onClick={closeNavbar}>
               {" "}
               <i className="fa-solid fa-heart me-1"></i>
               <span className="badge text-danger position-absolute translate-middle">
@@ -104,19 +104,10 @@ function Navbar() {
             </Link>
           </li>
 
-          {/* <li className="nav-item ">
-            <ul className="list-unstayled ">
-              <li className=" ms-3 fa-brands fa-instagram"></li>
-              <li className=" ms-3 fa-brands fa-facebook"></li>
-              <li className="ms-3 fa-brands fa-linkedin"></li>
-              <li className="ms-3 fa-brands fa-twitter"></li>
-            </ul>
-          </li> */}
-
           {token ? (
             <>
               <li className="nav-item">
-                <Link className="nav-link" to="/Profile">
+                <Link className="nav-link" to="/Profile" onClick={closeNavbar}>
                   {" "}
                   Profile <i className="fa-regular fa-user"></i>{" "}
                 </Link>
@@ -132,13 +123,13 @@ function Navbar() {
             <>
               {" "}
               <li className="nav-item">
-                <Link className="nav-link" to="/Login">
+                <Link className="nav-link" to="/Login" onClick={closeNavbar}>
                   {" "}
                   Login
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/Register">
+                <Link className="nav-link" to="/Register" onClick={closeNavbar}>
                   {" "}
                   Register
                 </Link>

@@ -1,8 +1,10 @@
 import FormInput from "../FormInput/FormInput"; // Importing custom form input component
 import styles from "../sharedStyles/loginAndRegister.module.css"; // Importing custom styles
 import Button from "../Button/Button"; // Importing button component
+import { useNavigate } from "react-router-dom";
 
 function RegisterForm({ formik, isLoading }) {
+  const navigate = useNavigate();
   return (
     <div
       className={`shadow rounded-3 pt-3 px-3 bg-white my-md-5 my-0 ${styles.registerContent}`}
@@ -14,7 +16,7 @@ function RegisterForm({ formik, isLoading }) {
         <FormInput
           id="name"
           type="text"
-          placeholder="Please write your name"
+          placeholder="write your name"
           value={formik.values.name}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -25,7 +27,7 @@ function RegisterForm({ formik, isLoading }) {
         <FormInput
           id="email"
           type="email"
-          placeholder="Please write your email"
+          placeholder="write your email"
           value={formik.values.email}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -36,7 +38,7 @@ function RegisterForm({ formik, isLoading }) {
         <FormInput
           id="phone"
           type="text"
-          placeholder="Please write your phone"
+          placeholder="write your phone"
           value={formik.values.phone}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -47,7 +49,7 @@ function RegisterForm({ formik, isLoading }) {
         <FormInput
           id="password"
           type="password"
-          placeholder="Please write your password"
+          placeholder="write your password"
           value={formik.values.password}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -58,7 +60,7 @@ function RegisterForm({ formik, isLoading }) {
         <FormInput
           id="rePassword"
           type="password"
-          placeholder="Please re-enter your password"
+          placeholder="re-enter your password"
           value={formik.values.rePassword}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -71,6 +73,11 @@ function RegisterForm({ formik, isLoading }) {
           text={"Register"} // Button text
           className="bg-dark text-white" // Button styles
         />
+        <div role="button" tabIndex={0} onClick={() => navigate("/Login")}>
+          <p className="mt-2">
+            Already have an account? <span className="text-danger">Login</span>
+          </p>
+        </div>
       </form>
     </div>
   );
