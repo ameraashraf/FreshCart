@@ -73,6 +73,25 @@ function Navbar() {
                 Orders
               </Link>
             </li>
+            <li className="nav-item position-relative  ">
+              <Link className="nav-link" to="/Cart" onClick={closeNavbar}>
+                {" "}
+                <i className="fas fa-cart-plus me-1"></i>
+                <span className="badge text-danger position-absolute translate-middle">
+                  {numberOfCartItems ? numberOfCartItems : ""}
+                </span>
+              </Link>
+            </li>
+
+            <li className="nav-item position-relative ">
+              <Link className="nav-link" to="/Wishlist" onClick={closeNavbar}>
+                {" "}
+                <i className="fa-solid fa-heart me-1"></i>
+                <span className="badge text-danger position-absolute translate-middle">
+                  {itemsCount ? itemsCount : ""}
+                </span>
+              </Link>
+            </li>
           </ul>
         ) : (
           ""
@@ -84,26 +103,6 @@ function Navbar() {
         id="navbarNavDropdown"
       >
         <ul className="navbar-nav ms-auto ">
-          <li className="nav-item position-relative ">
-            <Link className="nav-link" to="/Cart" onClick={closeNavbar}>
-              {" "}
-              <i className="fas fa-cart-plus me-1"></i>
-              <span className="badge text-danger position-absolute translate-middle">
-                {numberOfCartItems ? numberOfCartItems : ""}
-              </span>
-            </Link>
-          </li>
-
-          <li className="nav-item position-relative ">
-            <Link className="nav-link" to="/Wishlist" onClick={closeNavbar}>
-              {" "}
-              <i className="fa-solid fa-heart me-1"></i>
-              <span className="badge text-danger position-absolute translate-middle">
-                {itemsCount ? itemsCount : ""}
-              </span>
-            </Link>
-          </li>
-
           {token ? (
             <>
               <li className="nav-item">
